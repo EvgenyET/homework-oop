@@ -120,40 +120,40 @@ student_3 = Student('Лидия', 'Петрова')
 student_3.courses_in_progress += ['Python']
 student_3.finished_courses += ['Введение в программирование']
 
-student_1.rate_hw(best_lecturer_1, 'Python', 10)
-student_1.rate_hw(best_lecturer_1, 'Python', 10)
-student_1.rate_hw(best_lecturer_1, 'Python', 10)
+student_1.rate_hw(best_lecturer_1, 'Python', 6)
+student_1.rate_hw(best_lecturer_1, 'Python', 5)
+student_1.rate_hw(best_lecturer_1, 'Python', 5)
 
-student_1.rate_hw(best_lecturer_2, 'Python', 5)
+student_1.rate_hw(best_lecturer_2, 'Python', 10)
 student_1.rate_hw(best_lecturer_2, 'Python', 7)
-student_1.rate_hw(best_lecturer_2, 'Python', 8)
+student_1.rate_hw(best_lecturer_2, 'Python', 5)
 
-student_1.rate_hw(best_lecturer_1, 'Python', 7)
 student_1.rate_hw(best_lecturer_1, 'Python', 8)
-student_1.rate_hw(best_lecturer_1, 'Python', 9)
+student_1.rate_hw(best_lecturer_1, 'Python', 5)
+student_1.rate_hw(best_lecturer_1, 'Python', 10)
 
+student_2.rate_hw(best_lecturer_2, 'Java', 6)
 student_2.rate_hw(best_lecturer_2, 'Java', 10)
 student_2.rate_hw(best_lecturer_2, 'Java', 8)
-student_2.rate_hw(best_lecturer_2, 'Java', 9)
 
 student_3.rate_hw(best_lecturer_3, 'Python', 5)
-student_3.rate_hw(best_lecturer_3, 'Python', 6)
-student_3.rate_hw(best_lecturer_3, 'Python', 7)
+student_3.rate_hw(best_lecturer_3, 'Python', 5)
+student_3.rate_hw(best_lecturer_3, 'Python', 8)
 
 # Выставляем оценки студентам за домашние задания
-cool_reviewer_1.rate_hw(student_1, 'Python', 8)
-cool_reviewer_1.rate_hw(student_1, 'Python', 9)
-cool_reviewer_1.rate_hw(student_1, 'Python', 10)
+cool_reviewer_1.rate_hw(student_1, 'Python', 6)
+cool_reviewer_1.rate_hw(student_1, 'Python', 5)
+cool_reviewer_1.rate_hw(student_1, 'Python', 7)
 
+cool_reviewer_2.rate_hw(student_2, 'Java', 10)
 cool_reviewer_2.rate_hw(student_2, 'Java', 8)
-cool_reviewer_2.rate_hw(student_2, 'Java', 7)
 cool_reviewer_2.rate_hw(student_2, 'Java', 9)
 
+cool_reviewer_2.rate_hw(student_3, 'Python', 10)
+cool_reviewer_2.rate_hw(student_3, 'Python', 5)
+cool_reviewer_2.rate_hw(student_3, 'Python', 10)
 cool_reviewer_2.rate_hw(student_3, 'Python', 8)
-cool_reviewer_2.rate_hw(student_3, 'Python', 7)
-cool_reviewer_2.rate_hw(student_3, 'Python', 9)
-cool_reviewer_2.rate_hw(student_3, 'Python', 8)
-cool_reviewer_2.rate_hw(student_3, 'Python', 7)
+cool_reviewer_2.rate_hw(student_3, 'Python', 6)
 cool_reviewer_2.rate_hw(student_3, 'Python', 9)
 
 print(f'Перечень студентов:\n\n{student_1}\n\n{student_2}\n\n{student_3}')
