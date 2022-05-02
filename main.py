@@ -18,7 +18,7 @@ class Student:
         self.average_rating = sum(map(sum, self.grades.values())) / grades_count
         res = f'Имя: {self.name}\n' \
               f'Фамилия: {self.surname}\n' \
-              f'Средняя оценка за домашнее задание: {self.average_rating}\n' \
+              f'Средняя оценка за домашние задания: {self.average_rating}\n' \
               f'Курсы в процессе обучения: {courses_in_progress_string}\n' \
               f'Завершенные курсы: {finished_courses_string}'
         return res
@@ -95,25 +95,25 @@ best_lecturer_1 = Lecturer('Дмитрий', 'Башев')
 best_lecturer_1.courses_attached += ['Python']
 
 best_lecturer_2 = Lecturer('Пётр', 'Овчинников')
-best_lecturer_2.courses_attached += ['Java']
+best_lecturer_2.courses_attached += ['Git']
 
 best_lecturer_3 = Lecturer('Рауль', 'Олехандро')
 best_lecturer_3.courses_attached += ['Python']
 
-cool_reviewer_1 = Reviewer('Some', 'Buddy')
+cool_reviewer_1 = Reviewer('Евгений', 'Поддубный')
 cool_reviewer_1.courses_attached += ['Python']
-cool_reviewer_1.courses_attached += ['Java']
+cool_reviewer_1.courses_attached += ['Git']
 
 cool_reviewer_2 = Reviewer('Морис', 'Торез')
 cool_reviewer_2.courses_attached += ['Python']
-cool_reviewer_2.courses_attached += ['Java']
+cool_reviewer_2.courses_attached += ['Git']
 
 student_1 = Student('Дмитрий', 'Спиваков')
 student_1.courses_in_progress += ['Python']
 student_1.finished_courses += ['Введение в программирование']
 
 student_2 = Student('Аслан', 'Зелемханов')
-student_2.courses_in_progress += ['Java']
+student_2.courses_in_progress += ['Git']
 student_2.finished_courses += ['Введение в программирование']
 
 student_3 = Student('Лидия', 'Петрова')
@@ -132,22 +132,21 @@ student_1.rate_hw(best_lecturer_1, 'Python', 8)
 student_1.rate_hw(best_lecturer_1, 'Python', 5)
 student_1.rate_hw(best_lecturer_1, 'Python', 10)
 
-student_2.rate_hw(best_lecturer_2, 'Java', 6)
-student_2.rate_hw(best_lecturer_2, 'Java', 10)
-student_2.rate_hw(best_lecturer_2, 'Java', 8)
+student_2.rate_hw(best_lecturer_2, 'Git', 6)
+student_2.rate_hw(best_lecturer_2, 'Git', 10)
+student_2.rate_hw(best_lecturer_2, 'Git', 8)
 
 student_3.rate_hw(best_lecturer_3, 'Python', 5)
 student_3.rate_hw(best_lecturer_3, 'Python', 5)
 student_3.rate_hw(best_lecturer_3, 'Python', 8)
 
-# Выставляем оценки студентам за домашние задания
 cool_reviewer_1.rate_hw(student_1, 'Python', 6)
 cool_reviewer_1.rate_hw(student_1, 'Python', 5)
 cool_reviewer_1.rate_hw(student_1, 'Python', 7)
 
-cool_reviewer_2.rate_hw(student_2, 'Java', 10)
-cool_reviewer_2.rate_hw(student_2, 'Java', 8)
-cool_reviewer_2.rate_hw(student_2, 'Java', 9)
+cool_reviewer_2.rate_hw(student_2, 'Git', 10)
+cool_reviewer_2.rate_hw(student_2, 'Git', 8)
+cool_reviewer_2.rate_hw(student_2, 'Git', 9)
 
 cool_reviewer_2.rate_hw(student_3, 'Python', 10)
 cool_reviewer_2.rate_hw(student_3, 'Python', 5)
@@ -161,6 +160,10 @@ print()
 print()
 
 print(f'Перечень лекторов:\n\n{best_lecturer_1}\n\n{best_lecturer_2}\n\n{best_lecturer_3}')
+print()
+print()
+
+print(f'Перечень проверяющих:\n\n{cool_reviewer_1}\n\n{cool_reviewer_2}')
 print()
 print()
 
